@@ -1,0 +1,22 @@
+<div class="bg-gray-100 w-10 p-2 py-2 rounded-lg flex flex-col items-center space-y-2">
+  <!-- Plus Button -->
+  <button 
+    class="focus:outline-none transition-opacity p-1 rounded-full" 
+    (click)="upvote()"
+    [class.opacity-50]="isUpvoteDisabled()"
+    [disabled]="isUpvoteDisabled()">
+    <img src="assets/icon-plus.svg" alt="Plus icon" class="w-4 h-4" />
+  </button>
+  <!-- Score Display -->
+  <span class="font-semibold text-blue-800">
+    {{ currentScore }}
+  </span>
+  <!-- Minus Button -->
+  <button 
+    class="focus:outline-none transition-opacity p-1 rounded-full" 
+    (click)="downvote()"
+    [class.opacity-50]="isDownvoteDisabled()"
+    [disabled]="isDownvoteDisabled()">
+    <img src="assets/icon-minus.svg" alt="Minus icon" class="w-4 h-4"/>
+  </button>
+</div>

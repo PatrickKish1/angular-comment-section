@@ -1,13 +1,16 @@
+// app.component.ts
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { AddCommentComponent } from "./add-comment/add-comment.component";
+
+
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [FormsModule, AddCommentComponent]
 })
 export class AppComponent {
-  title = 'angular-comment-section';
+  
 }
