@@ -2,3 +2,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    background-color: #F3F4F6;
+}
+
+#comments-section {
+    padding-bottom: 100px;
+    min-height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+}
+  
+#comment-form-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 40;
+    transition: all 0.3s ease;
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+    max-width: 48rem;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+#empty {
+    bottom: 1;
+    padding: 50px;
+    margin: 20px;
+}
+  
+#comment-form-container .flex {
+    padding: 10px;
+    margin-bottom: -20px;
+}
+  
+#comment-input:focus {
+    outline: 2px solid #2563eb;
+    border-color: transparent;
+}
+  
+
+.space-y-4 {
+    margin-bottom: 100px;
+}

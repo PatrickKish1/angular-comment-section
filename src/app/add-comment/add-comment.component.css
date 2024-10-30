@@ -1,0 +1,39 @@
+#comments-section {
+    padding-bottom: 100px;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  #comment-form-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 40;
+    transition: all 0.3s ease;
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+    max-width: 48rem;
+    margin: 0 auto;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  #comment-form-container .flex {
+    padding: 1rem;
+  }
+  
+  #comment-input:focus {
+    outline: 2px solid #2563eb;
+    border-color: transparent;
+  }
+  
+  /* Space for fixed input */
+  .space-y-4 {
+    margin-bottom: 100px;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
